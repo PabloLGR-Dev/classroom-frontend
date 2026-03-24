@@ -3,7 +3,7 @@ import { ListResponse } from "@/types";
 import {createDataProvider, CreateDataProviderOptions} from "@refinedev/rest"
 
 if (!BACKEND_BASE_URL)
-  throw new Error('BACKEND_BASE_URL is not configured. Please set VITE_BACKEND_URL in your .env file.');
+  throw new Error('BACKEND_BASE_URL is not configured. Please set VITE_BACKEND_BASE_URL in your .env file.');
 
 const options: CreateDataProviderOptions = {
   getList: {
