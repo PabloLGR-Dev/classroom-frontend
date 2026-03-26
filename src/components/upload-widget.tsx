@@ -34,7 +34,7 @@ const UploadWidget = ({ value = null, onChange, disabled = false }) => {
                 uploadPreset: CLOUDINARY_UPLOAD_PRESET,
                 multiple: false,
                 folder: 'uploads',
-                maxFileSize: 500000,
+                maxFileSize: 5000000,
                 clientAllowedFormats: ['png', 'jpg', 'jpeg', 'webp']
             }, (error, result) => {
                 if(!error && result.event === 'success') {
